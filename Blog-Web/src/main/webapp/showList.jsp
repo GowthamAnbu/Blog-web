@@ -9,7 +9,10 @@
 </head>
 <body>
 <a href="showList/viewAll">view all articles</a><br>
-<a href="../publish.jsp">Publish Article</a>
+<%if (Integer.parseInt(request.getParameter("roleId"))==2) {%>
+<a href="../publish.jsp">Publish Article</a>	
+<%}
+%>
 <table>
 	<thead>
 		<td>TITLE</td>

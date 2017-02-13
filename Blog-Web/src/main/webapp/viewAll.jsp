@@ -8,12 +8,15 @@
 <title>VIEW ALL</title>
 </head>
 <body>
+<form action="../showList/viewByCategory">
 <select name="category" id="category">
 	<option value="" disabled selected>Choose your Category</option>
-	<c:forEach var="c" items="${CATEGORY_VIEW}" varStatus="i">
-	<option value="${c.name}">${c.name}</option>
-	</c:forEach>
+	<jstl:forEach var="i" items="${CATEGORY_VIEW}" varStatus="invalid">
+	<option value="${i.name}">${i.name}</option>
+	</jstl:forEach>
 </select>
+<input type="submit">
+</form>
 <table>
 	<thead>
 		<td>TITLE</td>
