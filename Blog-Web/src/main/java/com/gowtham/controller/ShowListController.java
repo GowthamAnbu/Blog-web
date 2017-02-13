@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.gowtham.dao.UserDAO;
 import com.gowtham.exception.ServiceException;
 import com.gowtham.model.Article;
 import com.gowtham.model.Category;

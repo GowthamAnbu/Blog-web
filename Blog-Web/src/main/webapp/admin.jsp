@@ -7,7 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ADMIN</title>
 </head>
+<a href="../logout">logout</a>
 <body>
+<a href="../logout">logout</a>
 <table>
 		<thead>
 		<td>ID</td>

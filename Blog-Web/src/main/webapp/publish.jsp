@@ -6,6 +6,7 @@ pageEncoding="ISO-8859-1"%>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>PUBLISH</title>
 </head>
+<a href="../logout">logout</a>
 <body>
 	<form action="/publish">
 		Title:<input type="text" name="name" required>

@@ -13,6 +13,7 @@
 <a href="../publish.jsp">Publish Article</a>	
 <%}
 %>
+<a href="../logout">logout</a>
 <table>
 	<thead>
 		<td>TITLE</td>
