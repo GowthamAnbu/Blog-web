@@ -23,6 +23,7 @@
 		<td>CONTENT</td>
 		<td>PUBLISHED_DATE</td>
 		<td>MODIFIED_DATE</td>
+		<td>COMMENT</td>
 	</thead>
 	<jstl:forEach var="i" items="${VIEW_ALL}" varStatus="invalid">
 	<tr>
@@ -30,6 +31,8 @@
 				<td>${i.content}</td>
 				<td>${i.publishedDate}</td>
 				<td>${i.modifiedDate}</td>
+				<td><a href="../comment.jsp?articleId=${i.id}">addcomment</a></td>
+				<td><a href="../showList/viewComments?articleId=${i.id}">viewcomments</a></td>
 	</tr>
 	</jstl:forEach>
 </table>
