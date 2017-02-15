@@ -135,10 +135,9 @@ public class ShowListController {
 	
 	
 	@GetMapping("/viewComments")
-	public String viewComments(@RequestParam("articleId")String articleId,HttpSession session,ModelMap modelMap){
+	public String viewComments(@RequestParam("articleId")String articleId,ModelMap modelMap){
 		final CommentDetailService commentDetailService = new CommentDetailService();
-		final User user = (User) session.getAttribute("USER");
-		List<CommentDetail>commentDetailList=commentDetailService.getComments(Integer.parseInt(articleId), user.getId());
+		List<CommentDetail>commentDetailList=commentDetailService.getComments(Integer.parseInt(articleId));
 		modelMap.addAttribute("VIEW_COMMENTS", commentDetailList);
 		return"../viewComments.jsp";
 	}
